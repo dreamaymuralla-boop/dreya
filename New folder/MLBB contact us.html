@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Zone - Contact Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #EAF6FF;
+            color: #0B1F3A;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            background-color: #0B1F3A;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            color: #BBDFFF;
+            margin-top: 8px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #42A5F5;
+        }
+
+        .hero {
+            background-color: #DCEEFF;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            padding: 35px 7%;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 25px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px
+                rgba(11, 31, 58, 0.12);
+        }
+
+        h2, h3 {
+            color: #1565C0;
+        }
+
+        .contact-info p {
+            line-height: 1.8;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #BBDFFF;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid #42A5F5;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 13px 25px;
+            background-color: #1565C0;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0B1F3A;
+        }
+
+        .message {
+            background-color: #DCEEFF;
+            padding: 35px 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: #0B1F3A;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 750px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div>
+            <div class="logo">MLBB Zone</div>
+            <div class="tagline">
+                Explore the exciting world of Mobile Legends.
+            </div>
+        </div>
+
+        <nav>
+            <a href="MLBB home.html">Home</a>
+            <a href="MLBB menu.html">Menu</a>
+            <a href="MLBB gallery.html">Gallery</a>
+            <a href="MLBB about us.html">About Us</a>
+            <a href="MLBB contact us.html">Contact Us</a>
+			<a href=	https://www.pinterest.com/search/pins/?q=mlbb&rs=typed" 
+		 target=" _blank">PINTEREST MLBB</a>
+        </nav>
+    </header>
+
+    <!-- INTRODUCTION -->
+    <section class="hero">
+        <h1>Contact Us</h1>
+
+        <p>
+            We would love to hear from you!
+        </p>
+
+        <p>
+            Have questions, suggestions, or feedback
+            about MLBB Zone? Send us a message below.
+        </p>
+    </section>
+
+    <!-- CONTACT INFORMATION AND FORM -->
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- CONTACT INFORMATION -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+
+                <p>
+                    Thank you for visiting MLBB Zone!
+                    Your feedback helps us improve our website
+                    and provide a better experience for MLBB fans.
+                </p>
+
+                <h3>Our Website</h3>
+                <p>
+                    <b>Name:</b> MLBB Zone
+                </p>
+
+                <p>
+                    <b>Topic:</b> Mobile Legends: Bang Bang
+                </p>
+
+                <p>
+                    <b>Purpose:</b> Gaming information,
+                    hero guides, strategies, and gallery.
+                </p>
+
+                <h3>Connect With Us</h3>
+                <p>
+                    Use the message form to share your
+                    questions, ideas, or suggestions.
+                </p>
+
+                <p>
+                    <i>
+                        Let's make the MLBB gaming
+                        community more enjoyable!
+                    </i>
+                </p>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+
+                <form action="#" method="post"
+                      onsubmit="alert('This is a demo form. Your message has not been sent. Connect a form service to receive messages.'); return false;">
+
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="question">General Question</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- THANK YOU SECTION -->
+    <section class="message">
+        <h2>Thank You for Visiting!</h2>
+
+        <p>
+            Your support means a lot to MLBB Zone.
+            Keep learning, keep playing, and keep fighting
+            for victory in the Land of Dawn!
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            &copy; 2026 MLBB Zone. All Rights Reserved.
+        </p>
+
+        <p>
+            MLBB Zone is a fan-made website and is not
+            officially affiliated with Moonton.
+        </p>
+    </footer>
+
+</body>
+</html>

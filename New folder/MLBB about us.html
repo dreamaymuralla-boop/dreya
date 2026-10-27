@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Zone - About Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #EAF6FF;
+            color: #0B1F3A;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            background-color: #0B1F3A;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            color: #BBDFFF;
+            margin-top: 8px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #42A5F5;
+        }
+
+        .hero {
+            background-color: #DCEEFF;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .section {
+            padding: 35px 7%;
+        }
+
+        .section h2 {
+            color: #1565C0;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px
+                rgba(11, 31, 58, 0.12);
+        }
+
+        .card h3 {
+            color: #1565C0;
+        }
+
+        .about-info {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 12px;
+            line-height: 1.8;
+        }
+
+        .quote {
+            background-color: #1565C0;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #0B1F3A;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 750px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div>
+            <div class="logo">MLBB Zone</div>
+            <div class="tagline">
+                Explore the exciting world of Mobile Legends.
+            </div>
+        </div>
+
+        <nav>
+            <a href="MLBB home.html">Home</a>
+            <a href="MLBB menu.html">Menu</a>
+            <a href="MLBB gallery.html">Gallery</a>
+            <a href="MLBB about.html">About Us</a>
+            <a href="MLBB contact us.html">Contact Us</a>
+			<a href=	https://www.pinterest.com/search/pins/?q=mlbb&rs=typed" 
+		 target=" _blank">PINTEREST MLBB</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT INTRODUCTION -->
+    <section class="hero">
+        <h1>About MLBB Zone</h1>
+
+        <p>
+            Welcome to MLBB Zone, a website dedicated to
+            the exciting world of Mobile Legends: Bang Bang.
+        </p>
+
+        <p>
+            Discover heroes, learn strategies, explore game
+            modes, and celebrate the spirit of teamwork.
+        </p>
+    </section>
+
+    <!-- WHO WE ARE -->
+    <section class="section">
+        <div class="about-info">
+            <h2>Who We Are</h2>
+
+            <p>
+                MLBB Zone is a fan-made informational website
+                created for players and fans of Mobile Legends:
+                Bang Bang. Our goal is to share useful
+                information about the game in a simple and
+                enjoyable way.
+            </p>
+
+            <p>
+                Here, visitors can explore different hero roles,
+                learn basic gameplay strategies, discover game
+                modes, and view exciting MLBB-themed content.
+                Whether you are a beginner or an experienced
+                player, MLBB Zone is a place to explore and
+                enjoy the game.
+            </p>
+        </div>
+    </section>
+
+    <!-- MISSION AND VISION -->
+    <section class="section"
+             style="background-color: #DCEEFF;">
+
+        <h2 style="text-align: center;">
+            Our Mission and Vision
+        </h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide accessible and helpful
+                    information about MLBB heroes, game modes,
+                    and strategies for players of all levels.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>
+                    To create an enjoyable online space where
+                    MLBB fans can explore their favorite game
+                    and continue learning about it.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Our Values</h3>
+                <p>
+                    We value teamwork, respect, sportsmanship,
+                    creativity, and continuous improvement
+                    in every gaming experience.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT THE GAME -->
+    <section class="section">
+        <div class="about-info">
+            <h2>About Mobile Legends: Bang Bang</h2>
+
+            <p>
+                Mobile Legends: Bang Bang is a multiplayer
+                online battle arena (MOBA) game for mobile
+                devices. Players compete in teams and select
+                heroes with different abilities and roles.
+            </p>
+
+            <p>
+                The six main hero roles are Tank, Fighter,
+                Assassin, Mage, Marksman, and Support.
+                Each role contributes differently to the team.
+                Players use teamwork, strategy, and map
+                awareness to destroy the opposing team's base.
+            </p>
+
+            <p>
+                Every match offers opportunities to improve
+                skills, coordinate with teammates, and
+                experience exciting battles.
+            </p>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section"
+             style="background-color: #DCEEFF;">
+
+        <h2 style="text-align: center;">
+            Why Visit MLBB Zone?
+        </h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Hero Information</h3>
+                <p>
+                    Learn about hero roles, abilities,
+                    and different play styles.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Gaming Strategies</h3>
+                <p>
+                    Explore tips about teamwork,
+                    item builds, and map awareness.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>MLBB Gallery</h3>
+                <p>
+                    Browse MLBB-themed pictures,
+                    heroes, skins, and battle moments.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+        <h2>One Team. One Dream. One Victory.</h2>
+
+        <p>
+            Work together, learn together, and fight
+            for victory in the Land of Dawn!
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        &copy; 2026 MLBB Zone. All Rights Reserved.
+        <p>
+            MLBB Zone is a fan-made website and is not
+            officially affiliated with Moonton.
+        </p>
+    </footer>
+
+</body>
+</html>

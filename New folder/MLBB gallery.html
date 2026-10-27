@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Zone - Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #EAF6FF;
+            color: #0B1F3A;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            background-color: #0B1F3A;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            color: #BBDFFF;
+            margin-top: 8px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #42A5F5;
+        }
+
+        .hero {
+            background-color: #DCEEFF;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #1565C0;
+        }
+
+        .gallery-section {
+            padding: 35px 5%;
+        }
+
+        .gallery-section h2 {
+            text-align: center;
+            color: #0B1F3A;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(11, 31, 58, 0.12);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+            background-color: #DCEEFF;
+        }
+
+        .card-content {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            color: #1565C0;
+            margin-top: 0;
+        }
+
+        .card-content p {
+            line-height: 1.5;
+        }
+
+        .cta {
+            background-color: #1565C0;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: white;
+            color: #1565C0;
+            padding: 12px 22px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #0B1F3A;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 750px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div>
+            <div class="logo">MLBB Zone</div>
+            <div class="tagline">
+                Explore the exciting world of Mobile Legends.
+            </div>
+        </div>
+
+        <nav>
+            <a href="MLBB home.html">Home</a>
+            <a href="MLBB menu.html">Menu</a>
+            <a href="MLBB gallery.html">Gallery</a>
+            <a href="MLBB about us.html">About Us</a>
+            <a href="MLBB contact us.html">Contact Us</a>
+		<a href=	https://www.pinterest.com/search/pins/?q=mlbb&rs=typed" 
+		 target=" _blank">PINTEREST MLBB</a>
+        </nav>
+    </header>
+
+    <!-- GALLERY INTRODUCTION -->
+    <section class="hero">
+        <h1>MLBB Photo Gallery</h1>
+
+        <p>
+            Discover legendary heroes, amazing skins,
+            epic battles, and unforgettable adventures.
+        </p>
+
+        <p style="color: #0B1F3A;">
+            "Heroes never fade. Legends live forever."
+        </p>
+    </section>
+
+    <!-- HERO GALLERY -->
+    <section class="gallery-section">
+        <h2>Our Hero Gallery</h2>
+
+        <p class="description">
+            Explore the different heroes and battle styles
+            of Mobile Legends: Bang Bang.
+        </p>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                    src="legendary.jpg"
+                    alt="Mobile Legends hero">
+                <div class="card-content">
+                    <h3>Legendary Heroes</h3>
+                    <p>
+                        Discover powerful heroes with unique
+                        skills and amazing abilities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="epic.jpg"
+                    alt="Mobile Legends hero skin">
+                <div class="card-content">
+                    <h3>Epic Skins</h3>
+                    <p>
+                        Explore fantastic hero skins and
+                        impressive character designs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="battles.jpg"
+                    alt="Mobile Legends team battle">
+                <div class="card-content">
+                    <h3>Epic Battles</h3>
+                    <p>
+                        Experience exciting team fights
+                        and thrilling moments.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="magic.jpg"
+                    alt="Mobile Legends mage hero">
+                <div class="card-content">
+                    <h3>Mages and Magic</h3>
+                    <p>
+                        Witness magical powers and
+                        spectacular combat skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="ass.jpg"
+                    alt="Mobile Legends assassin hero">
+                <div class="card-content">
+                    <h3>Assassin Heroes</h3>
+                    <p>
+                        Fast, agile, and deadly heroes
+                        ready to surprise their enemies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="land.jpg"
+                    alt="Mobile Legends battlefield">
+                <div class="card-content">
+                    <h3>Land of Dawn</h3>
+                    <p>
+                        Explore the battlefield where
+                        legendary matches take place.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BATTLE GALLERY -->
+    <section class="gallery-section"
+             style="background-color: #DCEEFF;">
+
+        <h2>Battle Moments</h2>
+
+        <p class="description">
+            Every match tells a story of teamwork,
+            courage, and victory.
+        </p>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                    src="fight.jpg"
+                    alt="MLBB team fight">
+                <div class="card-content">
+                    <h3>Team Fight</h3>
+                    <p>
+                        Work together and fight as one
+                        to defeat the enemy team.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="vic.jpg"
+                    alt="MLBB victory moment">
+                <div class="card-content">
+                    <h3>Victory</h3>
+                    <p>
+                        Celebrate every achievement
+                        and every hard-earned win.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="bat.jpg"
+                    alt="MLBB battlefield action">
+                <div class="card-content">
+                    <h3>Battle Action</h3>
+                    <p>
+                        Experience the excitement
+                        of action-packed battles.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Ready for Your Next Adventure?</h2>
+
+        <p>
+            Choose your hero, build your strategy,
+            and enter the Land of Dawn!
+        </p>
+
+        <a href="MLBB menu.html">Explore Our Menu</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        &copy; 2026 MLBB Zone. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
